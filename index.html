@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Doe – Game Programmer</title>
+  <title>Lucas Kajrel – Game Programmer</title>
   <style>
     .project-banner {
       width: 100%;
@@ -95,11 +95,30 @@
       color: #aaa;
     }
 
+    .layout {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
+
+    .sidebar {
+      position: fixed; 
+      left: 20px; 
+      top: 200px; 
+      max-width: 250px;
+      background: #222;
+      padding: 2rem;
+      border-radius: 10px;
+}
+
 
     .project {
       margin-bottom: 3rem;
@@ -141,38 +160,35 @@
     <p>Game Programmer • Unity Developer • Gameplay | Systems | Tools</p>
   </header>
 
-  <div class="container">
-  <!-- The Stained Crown --> 
-    <section class="project">
-      <div class="project-banner" style="background-image: url('images/StainedCrownAlphaBanner.png');"></div>
-      <div class="project-content">
-        <h2>⚔️ Demo Game Release 22.02.2025  – [The Stained Crown]</h2>
-        <p>A first-person action adventure game developed during my internship. I focused on player movement, interactions and animation as well as inventory management, combat and saving/loading systems</p>
-        <p><a href="https://jovinfast.itch.io/the-stained-crown">Play Demo</a> | <a href="https://github.com/yourrepo">View Code</a></p>
-      </div>
-    </section>
+  <div class="layout">
+    <div class="container">
+      <!-- The Stained Crown --> 
+      <section class="project">
+        <div class="project-banner" style="background-image: url('images/StainedCrownAlphaBanner.png');"></div>
+        <div class="project-content">
+          <h2>⚔️ Demo Game Release 22.02.2025  – [The Stained Crown]</h2>
+          <p>A first-person action adventure game developed during my internship. I focused on player movement, interactions and animation as well as inventory management, combat and saving/loading systems</p>
+          <p><a href="https://jovinfast.itch.io/the-stained-crown">Visit Game Page</a> | <a href="https://github.com/yourrepo">View Code</a></p>
+        </div>
+      </section>
 
-    <!-- Flutterfly Floored --> 
-    <section class="project">
-      <div class="project-banner flutter-banner" style="background-image: url('images/FlutterlyFlooredBanner.png');"></div>
-      <div class="project-content">
-        <h2> 🐦Game Release 28.06.2023  – [Flutterly Floored]</h2>
-        <p>A "bird"-person cozy platforming game developed with a team of 8 Game Creator Students. I focused on player movement, environment interactions and objects, menus and animation integration </p>
-        <p><a href="https://yrgo-game-creator.itch.io/flutterly-floored">Play Demo</a> | <a href="https://github.com/eengdahl/Flutterly_Floored/tree/main/Assets/Scripts">View Code</a></p>
-      </div>
-    </section>
+      <!-- Flutterfly Floored --> 
+      <section class="project">
+        <div class="project-banner flutter-banner" style="background-image: url('images/FlutterlyFlooredBanner.png');"></div>
+        <div class="project-content">
+          <h2> 🐦Game Release 28.06.2023  – [Flutterly Floored]</h2>
+          <p>A "bird"-person cozy platforming game developed with a team of 8 Game Creator Students. I focused on player movement, environment interactions and objects, menus and animation integration </p>
+          <p><a href="https://yrgo-game-creator.itch.io/flutterly-floored">Visit Game Page</a> | <a href="https://github.com/eengdahl/Flutterly_Floored/tree/Dev/Assets/Scripts">View Code</a></p>
+        </div>
+      </section>
+    </div>
 
-    <section class="project">
-      <h2>🎯 Projectile System Prototype</h2>
-      <p>A physics-based spear throwing system using Unity's Rigidbody for realistic arc and drag. Designed for medieval combat gameplay.</p>
-      <p><a href="https://github.com/yourrepo">View Code</a></p>
-    </section>
-
-    <section class="project">
-      <h2>🛡️ Block and Parry System</h2>
-      <p>Developed a directional block/parry mechanic using camera angle detection and animation blending in Unity.</p>
-      <p><a href="https://github.com/yourrepo">View Code</a></p>
-    </section>
+    <aside class="sidebar">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourgithub">yourgithub</a></p>
+    </aside>
   </div>
 
   <footer>
