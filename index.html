@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Kajrel – Game Programmer</title>
+  <title>Lucas Karjel – Game Programmer</title>
   <style>
     .project-banner {
       width: 100%;
@@ -26,6 +26,7 @@
       transform: scale(1.02);
       box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
+
 
     .project a {
       position: relative;
@@ -112,45 +113,79 @@
     .sidebar {
       position: fixed; 
       left: 20px; 
-      top: 200px; 
+      top: 200px;
       max-width: 250px;
       background: #222;
       padding: 2rem;
       border-radius: 10px;
-}
+    }
 
+    .sidebar a {
+        color: #81d4fa;
+        text-decoration: none;
+    }
+
+    .sidebar:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .sidebar a {
+      position: relative;
+      text-decoration: none;
+      color: #81d4fa;
+    }
+
+    .sidebar a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #81d4fa;
+      transition: width 0.3s;
+    }
+
+    .sidebar a:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+    .sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+    }
+    }
 
     .project {
-      margin-bottom: 3rem;
-      background: #222;
-      padding: 1.5rem;
-      border-radius: 10px;
+        margin-bottom: 3rem;
+        background: #222;
+        padding: 1.5rem;
+        border-radius: 10px;
     }
 
     .project h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: #4fc3f7;
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #FFD700;
     }
 
     .project p {
-      margin: 0.5rem 0;
+        margin: 0.5rem 0;
     }
 
     .project a {
-      color: #81d4fa;
-      text-decoration: none;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
+        color: #81d4fa;
+        text-decoration: none;
     }
 
     footer {
-      text-align: center;
-      padding: 2rem;
-      background: #1e1e1e;
-      color: #888;
+        text-align: center;
+        padding: 2rem;
+        background: #1e1e1e;
+        color: #888;
     }
   </style>
 </head>
@@ -168,7 +203,7 @@
         <div class="project-content">
           <h2>⚔️ Demo Game Release 22.02.2025  – [The Stained Crown]</h2>
           <p>A first-person action adventure game developed during my internship. I focused on player movement, interactions and animation as well as inventory management, combat and saving/loading systems</p>
-          <p><a href="https://jovinfast.itch.io/the-stained-crown">Visit Game Page</a> | <a href="https://github.com/yourrepo">View Code</a></p>
+          <p><a href="https://jovinfast.itch.io/the-stained-crown" target="_blank">Visit Game Page</a> | <a href="https://github.com/yourrepo" target="_blank">View Code</a></p>
         </div>
       </section>
 
@@ -178,16 +213,15 @@
         <div class="project-content">
           <h2> 🐦Game Release 28.06.2023  – [Flutterly Floored]</h2>
           <p>A "bird"-person cozy platforming game developed with a team of 8 Game Creator Students. I focused on player movement, environment interactions and objects, menus and animation integration </p>
-          <p><a href="https://yrgo-game-creator.itch.io/flutterly-floored">Visit Game Page</a> | <a href="https://github.com/eengdahl/Flutterly_Floored/tree/Dev/Assets/Scripts">View Code</a></p>
+          <p><a href="https://yrgo-game-creator.itch.io/flutterly-floored" target="_blank">Visit Game Page</a> | <a href="https://github.com/eengdahl/Flutterly_Floored/tree/Dev/Assets/Scripts" target="_blank">View Code</a></p>
         </div>
       </section>
     </div>
 
     <aside class="sidebar">
       <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/yourgithub">yourgithub</a></p>
+        <p>📧 lucas.karjel@hotmail.com</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/lucas-karjel-107639293/" target="_blank">LinkedIn</a></p>
     </aside>
   </div>
 
