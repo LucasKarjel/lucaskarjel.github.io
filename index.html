@@ -112,7 +112,7 @@
 
     .sidebar {
       position: fixed; 
-      left: 20px; 
+      right: 20px; 
       top: 200px;
       max-width: 250px;
       background: #222;
@@ -197,15 +197,77 @@
 
   <div class="layout">
     <div class="container">
-      <!-- The Stained Crown --> 
-      <section class="project">
-        <div class="project-banner" style="background-image: url('images/StainedCrownAlphaBanner.png');"></div>
-        <div class="project-content">
-          <h2>⚔️ Demo Game Release 22.02.2025  – [The Stained Crown]</h2>
-          <p>A first-person action adventure game developed during my internship. I focused on player movement, interactions and animation as well as inventory management, combat and saving/loading systems</p>
-          <p><a href="https://jovinfast.itch.io/the-stained-crown" target="_blank">Visit Game Page</a> | <a href="https://github.com/yourrepo" target="_blank">View Code</a></p>
-        </div>
-      </section>
+              <!-- The Stained Crown --> 
+        <section class="project" id="stained-crown">
+          <div class="project-banner" style="background-image: url('images/StainedCrownAlphaBanner.png');"></div>
+          <div class="project-content">
+            <h2>⚔️ Demo Game Release 22.02.2025 – [The Stained Crown]</h2>
+            <p>A first-person action adventure game developed during my internship. I focused on player movement, interactions and animation as well as inventory management, combat and saving/loading systems.</p>
+
+            <!-- Code Review Section (Initially Hidden) -->
+            <div class="code-review" id="stained-crown-code">
+              <h2>📜 Code Review: The Stained Crown</h2>
+              <p>Here's how I handled player movement...</p>
+              <img src="images/code-sample.png" alt="Code Example">
+              <p>This section will include breakdowns of my coding decisions, challenges faced, and solutions implemented.</p>
+            </div>
+
+            <!-- Links & Toggle Button -->
+            <p class="project-links">
+              <a href="https://jovinfast.itch.io/the-stained-crown" target="_blank">Visit Game Page</a> 
+              <!-- | <a href="javascript:void(0);" onclick="toggleCodeReview()" id="toggle-code-btn">View Code</a> -->
+            </p>
+          </div>
+        </section>
+
+
+        <!-- Smooth Toggle Animation & Button Styling -->
+        <style>
+        .code-review {
+          display: none;
+          opacity: 0;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+        }
+
+        .project-links {
+          margin-top: 1rem;
+        }
+
+        #toggle-code-btn {
+          color: #81d4fa;
+          text-decoration: none;
+          position: relative;
+          transition: color 0.3s;
+        }
+
+        #toggle-code-btn:hover {
+          text-decoration: underline;
+        }
+        </style>
+
+        <!-- JavaScript for Toggle Effect -->
+        <script>
+          function toggleCodeReview() {
+            let codeSection = document.getElementById("stained-crown-code");
+            let toggleButton = document.getElementById("toggle-code-btn");
+
+            if (codeSection.style.maxHeight) {
+              codeSection.style.maxHeight = null;
+              codeSection.style.opacity = "0";
+              setTimeout(() => codeSection.style.display = "none", 600); // Smooth fade-out
+              toggleButton.innerText = "View Code"; // Restore default button text
+            } else {
+              codeSection.style.display = "block";
+              codeSection.style.maxHeight = "1000px"; // Adjust based on content length
+              codeSection.style.opacity = "1";
+              toggleButton.innerText = "Hide Code"; // Change button text
+            }
+          }
+        </script>
+
+
 
       <!-- Flutterfly Floored --> 
       <section class="project">
