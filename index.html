@@ -187,6 +187,35 @@
         background: #1e1e1e;
         color: #888;
     }
+
+    .mobile-contact {
+  display: none;
+  background: #222;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  color: #f0f0f0;
+}
+
+.mobile-contact a {
+  color: #81d4fa;
+  text-decoration: none;
+}
+
+.mobile-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+
+  .mobile-contact {
+    display: block; /* Show the alternative contact block */
+  }
+}
+
   </style>
 </head>
 <body>
@@ -217,7 +246,13 @@
               <a href="https://jovinfast.itch.io/the-stained-crown" target="_blank">Visit Game Page</a> 
               <!-- | <a href="javascript:void(0);" onclick="toggleCodeReview()" id="toggle-code-btn">View Code</a> -->
             </p>
-          </div>
+    </div>
+
+    <div class="mobile-contact">
+  <h2>Contact</h2>
+  <p>📧 lucas.karjel@hotmail.com</p>
+  <p>🔗 <a href="https://www.linkedin.com/in/lucas-karjel-107639293/" target="_blank">LinkedIn</a></p>
+</div>
         </section>
 
 
